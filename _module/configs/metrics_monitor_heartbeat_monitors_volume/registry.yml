@@ -1,0 +1,11 @@
+- type: http
+  id: external_registry_endpoint
+  name: External Registry Endpoint
+  hosts: ["http://${VCW_HOSTNAME}:5000"]
+  check.response.status: [404]
+  schedule: '@every 30s'
+  fields:
+    scope: "${VCW_STACK_MODULEPREFIX}"
+    type: external
+    service: registry
+    area: endpoint

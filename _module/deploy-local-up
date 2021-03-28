@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+prefix="vcw_module_vcwc_registry__$1"
+prefix="vcw_module_vcwc_registry__$1"
+
+if [[ "vcw_module_vcwc_registry__metrics_monitor_heartbeat_config" == "$prefix"* ]] ; then
+	executionplane --silent docker volume create vcw_module_vcwc_registry__metrics_monitor_heartbeat_config
+fi
+
+if [[ "vcw_module_vcwc_registry__metrics_monitor_heartbeat_data_volume" == "$prefix"* ]] ; then
+	executionplane --silent docker volume create vcw_module_vcwc_registry__metrics_monitor_heartbeat_data_volume
+fi
+
+if [[ "vcw_module_vcwc_registry__metrics_monitor_heartbeat_monitors_volume" == "$prefix"* ]] ; then
+	executionplane --silent docker volume create vcw_module_vcwc_registry__metrics_monitor_heartbeat_monitors_volume
+fi
+
+if [[ "vcw_module_vcwc_registry__registry_registry_data_volume" == "$prefix"* ]] ; then
+	executionplane --silent docker volume create vcw_module_vcwc_registry__registry_registry_data_volume
+fi
+
+if [[ "vcw_module_vcwc_registry__metrics_monitor_heartbeat_config" == "$prefix"* ]] ; then
+	executionplane --silent docker run -v vcw_controlplane_repos:/source -v vcw_module_vcwc_registry__metrics_monitor_heartbeat_config:/vcw/pwd ${VCW_REGISTRY}vcwc/controlplane.vcw console cmd cp -r /source/vcwc/registry/_module/volumes/metrics_monitor_heartbeat_config/* /vcw/pwd
+fi
+
+if [[ "vcw_module_vcwc_registry__metrics_monitor_heartbeat_monitors_volume" == "$prefix"* ]] ; then
+	executionplane --silent docker run -v vcw_controlplane_repos:/source -v vcw_module_vcwc_registry__metrics_monitor_heartbeat_monitors_volume:/usr/share/heartbeat/monitors.d ${VCW_REGISTRY}vcwc/controlplane.vcw console cmd cp -r /source/vcwc/registry/_module/volumes/metrics_monitor_heartbeat_monitors_volume/* /usr/share/heartbeat/monitors.d
+fi

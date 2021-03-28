@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+
+	executionplane --silent docker volume create registry_local_registry__registry_volume
+	
