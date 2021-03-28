@@ -2,7 +2,7 @@
 version: '3'
 services:
 
-# START SERVICE vcwc/registry
+# START SERVICE hkvb/registry
   registry:
     image: ${VCW_REGISTRY}registry:2
     environment: []
@@ -18,7 +18,7 @@ services:
         reservations:
           memory: '${REGISTRY_DEPLOY_RESOURCES_RESERVATIONS_MEMORY}'
 ${REGISTRY_COMPOSE_EXTENSIONS}
-# END SERVICE vcwc/registry
+# END SERVICE hkvb/registry
 
 networks: {${VCW_STACK_GLOBAL_NETWORKLOCAL}_overlay: { external: true }}
 volumes: {${VCW_STACK_GLOBAL_STACKPREFIX}_registry_data_volume: { external: true }}

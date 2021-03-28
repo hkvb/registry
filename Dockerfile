@@ -1,11 +1,11 @@
 ARG  VCW_TAG=7.9.2
 ARG  VCW_TAG_BASH=5.0.18
-FROM vcwc/bash.wrapper:${VCW_TAG_BASH}
+FROM hkvb/bash.wrapper:${VCW_TAG_BASH}
 
 COPY ./ /vcw/repo/
 
 LABEL co.vcweb.schema-version="1.0" \
-      co.vcweb.label="vcwc/registry Library" \
+      co.vcweb.label="hkvb/registry Library" \
       co.vcweb.description="Docker Registry based image library for core vcwebco implementation." \
       co.vcweb.realm="vcwc" \
       co.vcweb.library="registry" \

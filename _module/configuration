@@ -3,8 +3,8 @@
 # START CONFIGURATION
 DOLLAR='$'
 export VCW_MODULE_PACKAGES="\
-registry:vcwc/registry,\
-metrics_monitor:vcwc/elastic/heartbeat"
+registry:hkvb/registry,\
+metrics_monitor:hkvb/elastic/heartbeat"
 # END CONFIGURATION
 
 # START OTHER SETTINGS

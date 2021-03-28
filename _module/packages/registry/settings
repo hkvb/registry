@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # START CONFIGURATION
-export VCW_STACK_GLOBAL_PACKAGE_CONTECO="vcwc/registry"
+export VCW_STACK_GLOBAL_PACKAGE_CONTECO="hkvb/registry"
 export VCW_STACK_GLOBAL_PACKAGE_TAG="2"
 export VCW_STACK_GLOBAL_STACKNAMES="registry"
 export VCW_STACK_GLOBAL_BOOTSTACKS="registry"

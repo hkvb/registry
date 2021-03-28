@@ -2,7 +2,7 @@
 
 # START CONFIGURATION
 DOLLAR='$'
-export VCW_STACK_GLOBAL_STACKS="vcwc/registry"
+export VCW_STACK_GLOBAL_STACKS="hkvb/registry"
 export VCW_STACK_GLOBAL_STACKNAMES="vcw_stack_registry"
 export VCW_STACK_GLOBAL_BOOTSTACKS="vcw_stack_registry"
 export VCW_STACK_GLOBAL_RUNSTACKS=""

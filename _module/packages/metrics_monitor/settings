@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # START CONFIGURATION
-export VCW_STACK_GLOBAL_PACKAGE_CONTECO="vcwc/elastic/heartbeat"
+export VCW_STACK_GLOBAL_PACKAGE_CONTECO="hkvb/elastic/heartbeat"
 export VCW_STACK_GLOBAL_PACKAGE_TAG="7.9.2"
 export VCW_STACK_GLOBAL_STACKNAMES="metrics_monitor"
 export VCW_STACK_GLOBAL_BOOTSTACKS=""

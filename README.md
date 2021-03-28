@@ -1,4 +1,11 @@
-# `vcwc/registry` Image Library
+# `hkvb/registry` Image Library
 
-The versioned repository of the Docker Registry image library.
-It implements service, module and solution.
+The Docker Registry image library.
+
+## hkvb/registry
+
+Docker registry:2 as a stack, module and solution.
+
+## Version
+
+2
