@@ -7,8 +7,8 @@ services:
     image: ${VCW_REGISTRY}registry:2
     environment: []
     command: []
-    volumes: [${VCW_STACK_GLOBAL_STACKPREFIX}_registry_data_volume:/var/lib/registry]
-    ports: [${VCW_STACK_REGISTRY_PORTS}]
+    volumes: [${VCW_STACK_GLOBAL_STACKPREFIX}_data_volume:/var/lib/registry]
+    ports: [${VCW_STACK_REGISTRY_MODULE_REGISTRY_PORT}:5000]
     networks: [${VCW_STACK_GLOBAL_NETWORKLOCAL}_overlay]
     deploy:
       mode: replicated
@@ -21,5 +21,5 @@ ${VCW_STACK_REGISTRY_COMPOSE_EXTENSIONS}
 # END SERVICE hkvb/registry
 
 networks: {${VCW_STACK_GLOBAL_NETWORKLOCAL}_overlay: { external: true }}
-volumes: {${VCW_STACK_GLOBAL_STACKPREFIX}_registry_data_volume: { external: true }}
+volumes: {${VCW_STACK_GLOBAL_STACKPREFIX}_data_volume: { external: true }}
 ${VCW_STACK_GLOBAL_COMPOSE_EXTENSIONS}

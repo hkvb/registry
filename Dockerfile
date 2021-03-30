@@ -7,7 +7,7 @@ COPY ./ /vcw/repo/
 LABEL co.vcweb.schema-version="1.0" \
       co.vcweb.label="hkvb/registry Library" \
       co.vcweb.description="Docker Registry based image library for core vcwebco implementation." \
-      co.vcweb.realm="vcwc" \
+      co.vcweb.realm="hkvb" \
       co.vcweb.library="registry" \
       co.vcweb.tag="${VCW_TAG}" \
       co.vcweb.maintainer="vcw@vcweb.co"

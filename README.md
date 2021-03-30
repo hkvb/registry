@@ -4,7 +4,11 @@ The Docker Registry image library.
 
 ## hkvb/registry
 
-Docker registry:2 as a stack, module and solution.
+Simple stack of Docker registry:2.
+
+## hkvb/registry/traefik
+
+Simple stack of Docker registry:2 behind Traefik.
 
 ## Version
 
