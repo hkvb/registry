@@ -12,4 +12,4 @@ Simple stack of Docker registry:2 behind Traefik.
 
 ## Version
 
-2
+* 2

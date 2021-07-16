@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+
+
+  ######################################################
+  # THIS FILE IS AUTO-GENERATED - PLEASE DO NOT CHANGE #
+  ######################################################
+
+#!/usr/bin/env bash
+
+executionplane --silent docker volume create hkvb_registry__registry_data_volume
+	
+#!/usr/bin/env bash
+
+executionplane --silent docker volume create hkvb_registry_traefik__registry_data_volume
+	
